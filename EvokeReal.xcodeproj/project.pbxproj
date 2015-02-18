@@ -17,7 +17,6 @@
 		2F14809918CBDDAB003ED024 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F14809818CBDDAB003ED024 /* AppDelegate.m */; };
 		2F1480A218CBDDAB003ED024 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1480A118CBDDAB003ED024 /* ViewController.m */; };
 		2F1480A418CBDDAB003ED024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1480A318CBDDAB003ED024 /* Images.xcassets */; };
-		2F1480AB18CBDDAB003ED024 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1480AA18CBDDAB003ED024 /* XCTest.framework */; };
 		2F1480AC18CBDDAB003ED024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F14808818CBDDAB003ED024 /* Foundation.framework */; };
 		2F1480AD18CBDDAB003ED024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F14808C18CBDDAB003ED024 /* UIKit.framework */; };
 		2F1480B518CBDDAB003ED024 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1480B318CBDDAB003ED024 /* InfoPlist.strings */; };
@@ -28,6 +27,8 @@
 		2F29539E18CE643900945800 /* greensid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F29539D18CE643900945800 /* greensid.png */; };
 		2F2953A018CE655A00945800 /* moviesid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F29539F18CE655A00945800 /* moviesid.png */; };
 		2F2953A218CE660500945800 /* moviesids.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2953A118CE660500945800 /* moviesids.png */; };
+		2F441EAF1A952CE4002165F3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F441EAE1A952CE4002165F3 /* TableViewCell.m */; };
+		2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5DAC561A947FE700A0A923 /* TableViewController.m */; };
 		2FBF963218CC699E002D70D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF963118CC699E002D70D0 /* MapKit.framework */; };
 		2FBF964B18CCB5DA002D70D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF964A18CCB5DA002D70D0 /* CoreLocation.framework */; };
 		2FF8933F18CCFDAC007886D8 /* chilchill.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FF8933E18CCFDAC007886D8 /* chilchill.png */; };
@@ -60,7 +61,6 @@
 		2F1480A118CBDDAB003ED024 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2F1480A318CBDDAB003ED024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F1480A918CBDDAB003ED024 /* EvokeRealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvokeRealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1480AA18CBDDAB003ED024 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2F1480B218CBDDAB003ED024 /* EvokeRealTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EvokeRealTests-Info.plist"; sourceTree = "<group>"; };
 		2F1480B418CBDDAB003ED024 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1480B618CBDDAB003ED024 /* EvokeRealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvokeRealTests.m; sourceTree = "<group>"; };
@@ -72,10 +72,12 @@
 		2F29539D18CE643900945800 /* greensid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greensid.png; sourceTree = "<group>"; };
 		2F29539F18CE655A00945800 /* moviesid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesid.png; sourceTree = "<group>"; };
 		2F2953A118CE660500945800 /* moviesids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesids.png; sourceTree = "<group>"; };
+		2F441EAD1A952CE4002165F3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2F441EAE1A952CE4002165F3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2F5DAC551A947FE700A0A923 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2F5DAC561A947FE700A0A923 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2FBF963118CC699E002D70D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2FBF964A18CCB5DA002D70D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		2FBF964C18CCC296002D70D0 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = "../../Library/Developer/Xcode/iOS DeviceSupport/6.0 (10A403)/Symbols/System/Library/Frameworks/GHUnit.framework"; sourceTree = "<group>"; };
-		2FBF964D18CCC296002D70D0 /* YAJL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAJL.framework; path = "../../Library/Developer/Xcode/iOS DeviceSupport/6.0 (10A403)/Symbols/System/Library/Frameworks/YAJL.framework"; sourceTree = "<group>"; };
 		2FF8933E18CCFDAC007886D8 /* chilchill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chilchill.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F1480AB18CBDDAB003ED024 /* XCTest.framework in Frameworks */,
 				2F1480AD18CBDDAB003ED024 /* UIKit.framework in Frameworks */,
 				2F1480AC18CBDDAB003ED024 /* Foundation.framework in Frameworks */,
 			);
@@ -127,14 +128,11 @@
 		2F14808718CBDDAB003ED024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FBF964C18CCC296002D70D0 /* GHUnit.framework */,
-				2FBF964D18CCC296002D70D0 /* YAJL.framework */,
 				2FBF964A18CCB5DA002D70D0 /* CoreLocation.framework */,
 				2FBF963118CC699E002D70D0 /* MapKit.framework */,
 				2F14808818CBDDAB003ED024 /* Foundation.framework */,
 				2F14808A18CBDDAB003ED024 /* CoreGraphics.framework */,
 				2F14808C18CBDDAB003ED024 /* UIKit.framework */,
-				2F1480AA18CBDDAB003ED024 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				2F17342018CCCF810045C6E0 /* Main_iPhone.storyboard */,
+				2F441EAD1A952CE4002165F3 /* TableViewCell.h */,
+				2F441EAE1A952CE4002165F3 /* TableViewCell.m */,
+				2F5DAC551A947FE700A0A923 /* TableViewController.h */,
+				2F5DAC561A947FE700A0A923 /* TableViewController.m */,
 				2F14809718CBDDAB003ED024 /* AppDelegate.h */,
 				2F1480C818CBEF1A003ED024 /* InterfaceBuilder.h */,
 				2F1480C918CBEF1A003ED024 /* InterfaceBuilder.m */,
@@ -239,6 +241,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Saiteja Samudrala";
 				TargetAttributes = {
+					2F14808418CBDDAB003ED024 = {
+						DevelopmentTeam = 4MHGB5N6RT;
+					};
 					2F1480A818CBDDAB003ED024 = {
 						TestTargetID = 2F14808418CBDDAB003ED024;
 					};
@@ -295,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F441EAF1A952CE4002165F3 /* TableViewCell.m in Sources */,
 				2F1480C218CBDE67003ED024 /* SwagViewController.m in Sources */,
+				2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */,
 				2F1480A218CBDDAB003ED024 /* ViewController.m in Sources */,
 				2F14809918CBDDAB003ED024 /* AppDelegate.m in Sources */,
 				2F14809518CBDDAB003ED024 /* main.m in Sources */,
@@ -419,8 +426,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EvokeReal/EvokeReal-Prefix.pch";

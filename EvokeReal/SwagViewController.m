@@ -27,12 +27,16 @@ NSMutableArray *babu;
 @synthesize movies;
 @synthesize samsam;
 
+- (IBAction)yes:(id)sender {
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:screen.text forKey:@"location"];
+    [defaults synchronize];
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-   
     
     self.x =0;
     self.java = [NSMutableArray arrayWithCapacity:10];
@@ -44,12 +48,7 @@ babu = [boss objectForKey:@"namaste"];
         
         [samsam addObject:[babu objectAtIndex:i]];
         
-        
-        
-        
     }
-    
-
     
     for (int i=0; i<40; i++) {
         int b = [samsam count]-2;

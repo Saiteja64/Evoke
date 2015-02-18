@@ -25,6 +25,7 @@
 
 - (IBAction)clear:(id)sender;
 -(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event;
+- (IBAction)yes:(id)sender;
 
 -(IBAction)boutain:(id)sender;
 @end
