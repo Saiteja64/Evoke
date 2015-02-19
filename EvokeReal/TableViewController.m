@@ -21,9 +21,13 @@
     float coordinate1;
     float coordinate2;
     NSMutableArray * places;
+    NSMutableArray * strings;
+    BOOL check;
 }
 
 - (void)viewDidLoad {
+    strings = [[NSMutableArray alloc]initWithCapacity:10];
+    check = false;
     places = [[NSMutableArray alloc]initWithCapacity:10];
     [super viewDidLoad];
     self.responseData = [[NSMutableData alloc]init];
@@ -95,7 +99,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    NSLog(@"dogsit");
     return [places count];
 }
 
@@ -117,25 +120,32 @@
     NSString *responseString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
     dic = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableContainers error:&error];
     NSMutableDictionary * idic = [dic objectForKey:@"response"];
-    NSLog(@"sososo %@ soso7sososSaiteja",idic);
     
     NSMutableArray * array = [idic objectForKey:@"venues"];
-    NSLog(@"%@ sososososSaiteja",dic);
 
 
     for(int i = 0; i < 10; i++)
     {
     idic = [array objectAtIndex:i];
     NSString * string = [idic objectForKey:@"name"];
-    NSLog(@" sososo %@ sososososSaiteja",string);
+        NSString * string1 = [idic objectForKey:@"formattedAddress"];
     if([places count] < 10)
     {
+        [strings addObject:string1];
         [places addObject:string];
     }
 }
     for (NSString * string in places)
         NSLog(string);
+    
+    if(check != true)
+    {
     [self.tableView reloadData];
+        NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+        [defs setObject:strings forKey:@"strings"];
+        [defs setObject:places forKey:@"places"];
+    
+    }
 
 }
 
@@ -162,7 +172,7 @@
     NSLog(@"cells");
     
     static NSString *CellIdentifier = @"TableViewCell";
-    TableViewCell *cell = (TableViewCell *)[tableView
+    TableViewCell *cell = (TableViewCell *)[self.tableView
                                                 dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
     if (cell == nil)
@@ -174,7 +184,7 @@
     
     NSString * string = [places objectAtIndex:indexPath.row];
     
-    NSLog(@"catshit %@ samosa", string);
+    
     // Display recipe in the table cell
     cell.nameLabel.text = string;
     

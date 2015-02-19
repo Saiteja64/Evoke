@@ -28,6 +28,7 @@
 		2F2953A018CE655A00945800 /* moviesid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F29539F18CE655A00945800 /* moviesid.png */; };
 		2F2953A218CE660500945800 /* moviesids.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2953A118CE660500945800 /* moviesids.png */; };
 		2F441EAF1A952CE4002165F3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F441EAE1A952CE4002165F3 /* TableViewCell.m */; };
+		2F441EB21A9566CA002165F3 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F441EB11A9566CA002165F3 /* ViewController1.m */; };
 		2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5DAC561A947FE700A0A923 /* TableViewController.m */; };
 		2FBF963218CC699E002D70D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF963118CC699E002D70D0 /* MapKit.framework */; };
 		2FBF964B18CCB5DA002D70D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF964A18CCB5DA002D70D0 /* CoreLocation.framework */; };
@@ -74,6 +75,8 @@
 		2F2953A118CE660500945800 /* moviesids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesids.png; sourceTree = "<group>"; };
 		2F441EAD1A952CE4002165F3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		2F441EAE1A952CE4002165F3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2F441EB01A9566CA002165F3 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		2F441EB11A9566CA002165F3 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		2F5DAC551A947FE700A0A923 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		2F5DAC561A947FE700A0A923 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2FBF963118CC699E002D70D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				2F17342018CCCF810045C6E0 /* Main_iPhone.storyboard */,
+				2F441EB01A9566CA002165F3 /* ViewController1.h */,
+				2F441EB11A9566CA002165F3 /* ViewController1.m */,
 				2F441EAD1A952CE4002165F3 /* TableViewCell.h */,
 				2F441EAE1A952CE4002165F3 /* TableViewCell.m */,
 				2F5DAC551A947FE700A0A923 /* TableViewController.h */,
@@ -304,6 +309,7 @@
 				2F1480C218CBDE67003ED024 /* SwagViewController.m in Sources */,
 				2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */,
 				2F1480A218CBDDAB003ED024 /* ViewController.m in Sources */,
+				2F441EB21A9566CA002165F3 /* ViewController1.m in Sources */,
 				2F14809918CBDDAB003ED024 /* AppDelegate.m in Sources */,
 				2F14809518CBDDAB003ED024 /* main.m in Sources */,
 				2F1480CA18CBEF1A003ED024 /* InterfaceBuilder.m in Sources */,
