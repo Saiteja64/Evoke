@@ -128,11 +128,12 @@
     {
     idic = [array objectAtIndex:i];
     NSString * string = [idic objectForKey:@"name"];
-        NSArray * string1 = [idic objectForKey:@"formattedAddress"];
+        NSMutableDictionary * string1 = [idic objectForKey:@"location"];
+        NSArray * tarray = [string1 objectForKey:@"formattedAddress"];
         NSString * string2 = [NSString stringWithFormat:@""];
-        for(int k = 0; k < [string1 count]; k++)
+        for(int k = 0; k < [tarray count]; k++)
         {
-            string2 = [string2 stringByAppendingString:[string1 objectAtIndex:i]];
+            string2 = [string2 stringByAppendingString:[tarray objectAtIndex:k]];
         }
         NSLog(string2);
     if([places count] < 10)
