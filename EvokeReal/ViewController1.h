@@ -11,5 +11,6 @@
 @interface ViewController1 : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextView *label;
+@property (strong, nonatomic) IBOutlet UILabel *label1;
 
 @end

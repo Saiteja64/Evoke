@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray * places = [defaults objectForKey:@"places"];
+    NSMutableArray * strings = [defaults objectForKey:@"strings"];
+    NSString * current = [defaults objectForKey:@"current"];
+    _label1.text = current;
+    
+    for(int i= 0; i < [places count]; i++)
+    {
+        if([current isEqualToString:[places objectAtIndex:i]])
+        {
+            _label.text = [strings objectAtIndex:i];
+            NSLog(@"%@ dfajflakjf",[strings objectAtIndex:i]);
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

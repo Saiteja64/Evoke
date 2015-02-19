@@ -128,10 +128,16 @@
     {
     idic = [array objectAtIndex:i];
     NSString * string = [idic objectForKey:@"name"];
-        NSString * string1 = [idic objectForKey:@"formattedAddress"];
+        NSArray * string1 = [idic objectForKey:@"formattedAddress"];
+        NSString * string2 = [NSString stringWithFormat:@""];
+        for(int k = 0; k < [string1 count]; k++)
+        {
+            string2 = [string2 stringByAppendingString:[string1 objectAtIndex:i]];
+        }
+        NSLog(string2);
     if([places count] < 10)
     {
-        [strings addObject:string1];
+        [strings addObject:string2];
         [places addObject:string];
     }
 }
@@ -142,12 +148,26 @@
     {
     [self.tableView reloadData];
         NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+        NSLog(@"crash");
+        for (int i = 0; i < [strings count]; i++)
+            NSLog([strings objectAtIndex:i]);
         [defs setObject:strings forKey:@"strings"];
         [defs setObject:places forKey:@"places"];
     
     }
-
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString: @"saag"])
+    {
+        NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+        TableViewCell *source = (TableViewCell *)sender;
+        NSLog(source.nameLabel.text);
+        [defs setObject:source.nameLabel.text forKey:@"current"];
+    }
+}
+
 
 - (void)locationManager:(CLLocationManager*)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {

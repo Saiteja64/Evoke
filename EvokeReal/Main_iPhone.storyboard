@@ -244,7 +244,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="onx-LZ-c2y" id="Bta-4Q-nlf"/>
-                                    <segue destination="JXo-d1-Y7s" kind="modal" id="sZd-jw-G2j"/>
+                                    <segue destination="JXo-d1-Y7s" kind="modal" identifier="saag" id="sZd-jw-G2j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -292,7 +292,7 @@
                     <navigationItem key="navigationItem" id="sFZ-QZ-WJ0"/>
                     <connections>
                         <outlet property="label" destination="F10-Z2-bWU" id="9uG-eO-0Fh"/>
-                        <outlet property="mapView" destination="qAP-ZM-cr4" id="cV2-qa-hW7"/>
+                        <outlet property="label1" destination="T9G-8x-CtQ" id="eow-nk-I0I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6x-SK-F11" userLabel="First Responder" sceneMemberID="firstResponder"/>
