@@ -11,8 +11,8 @@
 @interface SwagViewController ()
 
 @end
-NSUserDefaults *boss;
-NSMutableArray *babu;
+NSUserDefaults *defaults; //NSUserDefaults object to get objects from previous viewControllers
+NSMutableArray *bigArray; //Array consisting of things to do based on User Interests
 
 @implementation SwagViewController
 
@@ -40,13 +40,13 @@ NSMutableArray *babu;
     
     self.x =0;
     self.java = [NSMutableArray arrayWithCapacity:10];
-  boss = [NSUserDefaults standardUserDefaults];
-babu = [boss objectForKey:@"namaste"];
+    defaults = [NSUserDefaults standardUserDefaults];
+    bigArray = [defaults objectForKey:@"namaste"];
     self.samsam = [NSMutableArray arrayWithCapacity:30];
     
-    for (int i=0; i<[babu count]; i++) {
+    for (int i=0; i<[bigArray count]; i++) {
         
-        [samsam addObject:[babu objectAtIndex:i]];
+        [samsam addObject:[bigArray objectAtIndex:i]];
         
     }
     
@@ -80,26 +80,17 @@ babu = [boss objectForKey:@"namaste"];
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    
-    
-    
     if(event.type == UIEventSubtypeMotionShake)
        
     {
-   
-        
        
         if(x==[samsam count]-1){
             x=0;
             
         }
-        
-        
         screen.text = [samsam objectAtIndex:x];
-        
         x++;
-        
-    
+
     }  
     
     NSUserDefaults * bobjill = [NSUserDefaults standardUserDefaults];

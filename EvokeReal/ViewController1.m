@@ -18,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Using NSUSer Defaults to access data from previous ViewControllers
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    
     NSMutableArray * lats = [defaults objectForKey:@"lats"];
     NSMutableArray * longs = [defaults objectForKey:@"longs"];
     NSMutableArray * places = [defaults objectForKey:@"places"];
@@ -36,11 +38,11 @@
             NSString * curLoc = [defaults objectForKey:@"curLocLat"];
             NSString * curLocLong = [defaults objectForKey:@"curLocLong"];
             CLLocationCoordinate2D  currentLocation;
-            currentLocation.latitude = [curLoc integerValue];
-            currentLocation.longitude = [curLocLong integerValue];
+            currentLocation.latitude = [curLoc floatValue];
+            currentLocation.longitude = [curLocLong floatValue];
             CLLocationCoordinate2D  mapCenter;
-            mapCenter.latitude = [[lats objectAtIndex:i]integerValue];
-            mapCenter.longitude = [[longs objectAtIndex:i]integerValue];
+            mapCenter.latitude = [[lats objectAtIndex:i]floatValue];
+            mapCenter.longitude = [[longs objectAtIndex:i]floatValue];
             MKCoordinateRegion  viewRegion = MKCoordinateRegionMakeWithDistance(mapCenter, 500 * METERS_PER_MILE, 500 * METERS_PER_MILE);
             [[self maps]setRegion:viewRegion animated: YES];
             MKPointAnnotation *location = [[MKPointAnnotation alloc]init];
@@ -55,7 +57,7 @@
             [[self maps]addAnnotation:curLocation];
             [[self maps]setDelegate:self];
             _label.text = [strings objectAtIndex:i];
-            NSLog(@"%@ dfajflakjf",[strings objectAtIndex:i]);
+        
         }
     }
 }
