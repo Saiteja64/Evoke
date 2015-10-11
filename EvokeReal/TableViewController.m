@@ -22,6 +22,8 @@
     float coordinate2;
     NSMutableArray * places;
     NSMutableArray * strings;
+    NSMutableArray * lats;
+    NSMutableArray * longs;
     BOOL check;
 }
 
@@ -62,6 +64,8 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    lats = [[NSMutableArray alloc]init];
+    longs = [[NSMutableArray alloc]init];
     CLLocation * newLocation = [locations lastObject];
     coordinate1 = newLocation.coordinate.longitude;
     coordinate2 = newLocation.coordinate.latitude;
@@ -118,17 +122,28 @@
     //Getting your response string
     NSError * error = [[NSError alloc]init];
     NSString *responseString = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",responseString);
     dic = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableContainers error:&error];
     NSMutableDictionary * idic = [dic objectForKey:@"response"];
     
     NSMutableArray * array = [idic objectForKey:@"venues"];
-
+    
 
     for(int i = 0; i < 10; i++)
     {
     idic = [array objectAtIndex:i];
     NSString * string = [idic objectForKey:@"name"];
         NSMutableDictionary * string1 = [idic objectForKey:@"location"];
+       
+        NSString * latitude = [string1 objectForKey:@"lat"];
+        NSString * longitude = [string1 objectForKey:@"lng"];
+        
+        NSLog(@"BUZZZZ%@",latitude);
+        
+        [lats addObject:latitude];
+        [longs addObject:longitude];
+
+        
         NSArray * tarray = [string1 objectForKey:@"formattedAddress"];
         NSString * string2 = [NSString stringWithFormat:@""];
         for(int k = 0; k < [tarray count]; k++)
@@ -154,6 +169,8 @@
             NSLog([strings objectAtIndex:i]);
         [defs setObject:strings forKey:@"strings"];
         [defs setObject:places forKey:@"places"];
+        [defs setObject:lats forKey:@"lats"];
+        [defs setObject:longs forKey:@"longs"];
     
     }
 }

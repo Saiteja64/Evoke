@@ -14,7 +14,17 @@
 
 @property(strong, nonatomic) NSMutableArray* bigArray;
 @property  int k;
+@property  int j;
+@property  int l;
+@property  int m;
+@property  int n;
+
 @property (weak, nonatomic) IBOutlet UIButton *shopper;
+@property (weak, nonatomic) IBOutlet UIButton *sportsButton;
+@property (weak, nonatomic) IBOutlet UIButton *foodButton;
+@property (weak, nonatomic) IBOutlet UIButton *travelButton;
+@property (weak, nonatomic) IBOutlet UIButton *moviesButton;
+
 
 -(IBAction)masala : (id)sender;
 -(IBAction)shop:(id)sender;

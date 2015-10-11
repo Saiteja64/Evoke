@@ -7,6 +7,7 @@
 //
 
 #import "ViewController1.h"
+#import <MapKit/MapKit.h>
 
 @interface ViewController1 ()
 
@@ -17,15 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray * lats = [defaults objectForKey:@"lats"];
+    NSMutableArray * longs = [defaults objectForKey:@"longs"];
     NSMutableArray * places = [defaults objectForKey:@"places"];
     NSMutableArray * strings = [defaults objectForKey:@"strings"];
     NSString * current = [defaults objectForKey:@"current"];
     _label1.text = current;
     
+    MKAnnotationView * annotation = [[MKAnnotationView alloc]init];
+    
+    
     for(int i= 0; i < [places count]; i++)
     {
         if([current isEqualToString:[places objectAtIndex:i]])
         {
+            MKPointAnnotation * point = [[MKPointAnnotation alloc]init];
+            MKPinAnnotationView * annotation = [[MKPinAnnotationView alloc]init];
+
             _label.text = [strings objectAtIndex:i];
             NSLog(@"%@ dfajflakjf",[strings objectAtIndex:i]);
         }

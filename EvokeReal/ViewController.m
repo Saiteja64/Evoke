@@ -32,7 +32,7 @@
     self.travel = [NSMutableArray arrayWithObjects:@"Beach today?", @"Arcade today", @" National park ?", nil];
     self.shopping = [NSMutableArray arrayWithObjects:@"Supermarket ?", @"Mall ?", @"Hawker ? ", nil];
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"tennisblur.png"]];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"backgroun.png"]];
     
     
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

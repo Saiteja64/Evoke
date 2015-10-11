@@ -24,11 +24,17 @@
 		2F1480C218CBDE67003ED024 /* SwagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1480C118CBDE67003ED024 /* SwagViewController.m */; };
 		2F1480CA18CBEF1A003ED024 /* InterfaceBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1480C918CBEF1A003ED024 /* InterfaceBuilder.m */; };
 		2F17342118CCCF810045C6E0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17342018CCCF810045C6E0 /* Main_iPhone.storyboard */; };
-		2F29539E18CE643900945800 /* greensid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F29539D18CE643900945800 /* greensid.png */; };
-		2F2953A018CE655A00945800 /* moviesid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F29539F18CE655A00945800 /* moviesid.png */; };
 		2F2953A218CE660500945800 /* moviesids.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2953A118CE660500945800 /* moviesids.png */; };
 		2F441EAF1A952CE4002165F3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F441EAE1A952CE4002165F3 /* TableViewCell.m */; };
 		2F441EB21A9566CA002165F3 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F441EB11A9566CA002165F3 /* ViewController1.m */; };
+		2F5961111BCA2EA800480054 /* logo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5961101BCA2EA800480054 /* logo copy.png */; };
+		2F5961191BCA32FD00480054 /* backgroun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5961181BCA32FD00480054 /* backgroun.png */; };
+		2F59611B1BCA34C600480054 /* moviesid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F59611A1BCA34C600480054 /* moviesid.png */; };
+		2F59611D1BCA35C300480054 /* tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F59611C1BCA35C300480054 /* tennis.png */; };
+		2F59611F1BCA376500480054 /* greensid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F59611E1BCA376500480054 /* greensid.png */; };
+		2F5961211BCA37D500480054 /* travel.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5961201BCA37D500480054 /* travel.png */; };
+		2F5961251BCA393500480054 /* chanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5961241BCA393500480054 /* chanel.png */; };
+		2F5961281BCA56F300480054 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5961271BCA56F300480054 /* CustomAnnotation.m */; };
 		2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5DAC561A947FE700A0A923 /* TableViewController.m */; };
 		2FBF963218CC699E002D70D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF963118CC699E002D70D0 /* MapKit.framework */; };
 		2FBF964B18CCB5DA002D70D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBF964A18CCB5DA002D70D0 /* CoreLocation.framework */; };
@@ -70,13 +76,20 @@
 		2F1480C818CBEF1A003ED024 /* InterfaceBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceBuilder.h; sourceTree = "<group>"; };
 		2F1480C918CBEF1A003ED024 /* InterfaceBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceBuilder.m; sourceTree = "<group>"; };
 		2F17342018CCCF810045C6E0 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2F29539D18CE643900945800 /* greensid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greensid.png; sourceTree = "<group>"; };
-		2F29539F18CE655A00945800 /* moviesid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesid.png; sourceTree = "<group>"; };
 		2F2953A118CE660500945800 /* moviesids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesids.png; sourceTree = "<group>"; };
 		2F441EAD1A952CE4002165F3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		2F441EAE1A952CE4002165F3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		2F441EB01A9566CA002165F3 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		2F441EB11A9566CA002165F3 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		2F5961101BCA2EA800480054 /* logo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo copy.png"; sourceTree = "<group>"; };
+		2F5961181BCA32FD00480054 /* backgroun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroun.png; sourceTree = "<group>"; };
+		2F59611A1BCA34C600480054 /* moviesid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviesid.png; sourceTree = "<group>"; };
+		2F59611C1BCA35C300480054 /* tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tennis.png; sourceTree = "<group>"; };
+		2F59611E1BCA376500480054 /* greensid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greensid.png; sourceTree = "<group>"; };
+		2F5961201BCA37D500480054 /* travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = travel.png; sourceTree = "<group>"; };
+		2F5961241BCA393500480054 /* chanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chanel.png; sourceTree = "<group>"; };
+		2F5961261BCA56F300480054 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		2F5961271BCA56F300480054 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 		2F5DAC551A947FE700A0A923 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		2F5DAC561A947FE700A0A923 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2FBF963118CC699E002D70D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -143,6 +156,8 @@
 		2F14808E18CBDDAB003ED024 /* EvokeReal */ = {
 			isa = PBXGroup;
 			children = (
+				2F5961181BCA32FD00480054 /* backgroun.png */,
+				2F5961101BCA2EA800480054 /* logo copy.png */,
 				2F17342018CCCF810045C6E0 /* Main_iPhone.storyboard */,
 				2F441EB01A9566CA002165F3 /* ViewController1.h */,
 				2F441EB11A9566CA002165F3 /* ViewController1.m */,
@@ -161,7 +176,10 @@
 				2F1480C118CBDE67003ED024 /* SwagViewController.m */,
 				2F1480A118CBDDAB003ED024 /* ViewController.m */,
 				2F1480A318CBDDAB003ED024 /* Images.xcassets */,
+				2F5961201BCA37D500480054 /* travel.png */,
 				2F14808F18CBDDAB003ED024 /* Supporting Files */,
+				2F5961261BCA56F300480054 /* CustomAnnotation.h */,
+				2F5961271BCA56F300480054 /* CustomAnnotation.m */,
 			);
 			path = EvokeReal;
 			sourceTree = "<group>";
@@ -169,10 +187,12 @@
 		2F14808F18CBDDAB003ED024 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F5961241BCA393500480054 /* chanel.png */,
+				2F59611E1BCA376500480054 /* greensid.png */,
+				2F59611C1BCA35C300480054 /* tennis.png */,
+				2F59611A1BCA34C600480054 /* moviesid.png */,
 				2FF8933E18CCFDAC007886D8 /* chilchill.png */,
 				2F2953A118CE660500945800 /* moviesids.png */,
-				2F29539D18CE643900945800 /* greensid.png */,
-				2F29539F18CE655A00945800 /* moviesid.png */,
 				2F14809018CBDDAB003ED024 /* EvokeReal-Info.plist */,
 				2F14809118CBDDAB003ED024 /* InfoPlist.strings */,
 				2F14809418CBDDAB003ED024 /* main.m */,
@@ -278,15 +298,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F59611F1BCA376500480054 /* greensid.png in Resources */,
 				2F0F78E61968A5AE00CD8802 /* Maps.png in Resources */,
 				2FF8933F18CCFDAC007886D8 /* chilchill.png in Resources */,
+				2F5961191BCA32FD00480054 /* backgroun.png in Resources */,
 				2F1480A418CBDDAB003ED024 /* Images.xcassets in Resources */,
-				2F29539E18CE643900945800 /* greensid.png in Resources */,
+				2F59611B1BCA34C600480054 /* moviesid.png in Resources */,
+				2F5961111BCA2EA800480054 /* logo copy.png in Resources */,
 				2F14809318CBDDAB003ED024 /* InfoPlist.strings in Resources */,
+				2F5961251BCA393500480054 /* chanel.png in Resources */,
 				2F2953A218CE660500945800 /* moviesids.png in Resources */,
 				2F17342118CCCF810045C6E0 /* Main_iPhone.storyboard in Resources */,
-				2F2953A018CE655A00945800 /* moviesid.png in Resources */,
+				2F59611D1BCA35C300480054 /* tennis.png in Resources */,
 				2F0F78E41968A41F00CD8802 /* map-marker-hi.png in Resources */,
+				2F5961211BCA37D500480054 /* travel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5961281BCA56F300480054 /* CustomAnnotation.m in Sources */,
 				2F441EAF1A952CE4002165F3 /* TableViewCell.m in Sources */,
 				2F1480C218CBDE67003ED024 /* SwagViewController.m in Sources */,
 				2F5DAC571A947FE700A0A923 /* TableViewController.m in Sources */,
