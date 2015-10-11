@@ -99,17 +99,8 @@ babu = [boss objectForKey:@"namaste"];
         
         x++;
         
-        
-        
-        
-        
     
-    }
-    
-            
-            
-    
-        
+    }  
     
     NSUserDefaults * bobjill = [NSUserDefaults standardUserDefaults];
     [bobjill setObject:screen.text forKey:@"jacob"];

@@ -33,16 +33,26 @@
     {
         if([current isEqualToString:[places objectAtIndex:i]])
         {
+            NSString * curLoc = [defaults objectForKey:@"curLocLat"];
+            NSString * curLocLong = [defaults objectForKey:@"curLocLong"];
+            CLLocationCoordinate2D  currentLocation;
+            currentLocation.latitude = [curLoc integerValue];
+            currentLocation.longitude = [curLocLong integerValue];
             CLLocationCoordinate2D  mapCenter;
             mapCenter.latitude = [[lats objectAtIndex:i]integerValue];
             mapCenter.longitude = [[longs objectAtIndex:i]integerValue];
-            MKCoordinateRegion  viewRegion = MKCoordinateRegionMakeWithDistance(mapCenter, 0.5 * METERS_PER_MILE, 0.5 * METERS_PER_MILE);
+            MKCoordinateRegion  viewRegion = MKCoordinateRegionMakeWithDistance(mapCenter, 500 * METERS_PER_MILE, 500 * METERS_PER_MILE);
             [[self maps]setRegion:viewRegion animated: YES];
             MKPointAnnotation *location = [[MKPointAnnotation alloc]init];
+            MKPointAnnotation *curLocation = [[MKPointAnnotation alloc]init];
+            curLocation.coordinate = currentLocation;
+            curLocation.title = @"Current Location";
+            curLocation.subtitle = @"Your Current Location";
             location.coordinate = mapCenter;
             location.title = [places objectAtIndex:i];
             location.subtitle = [strings objectAtIndex:i];
             [[self maps]addAnnotation:location];
+            [[self maps]addAnnotation:curLocation];
             [[self maps]setDelegate:self];
             _label.text = [strings objectAtIndex:i];
             NSLog(@"%@ dfajflakjf",[strings objectAtIndex:i]);

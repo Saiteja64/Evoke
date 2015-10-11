@@ -67,9 +67,12 @@
     lats = [[NSMutableArray alloc]init];
     longs = [[NSMutableArray alloc]init];
     CLLocation * newLocation = [locations lastObject];
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSString stringWithFormat:@"%f",newLocation.coordinate.latitude] forKey:@"curLocLat"];
+    [defaults setObject:[NSString stringWithFormat:@"%f",newLocation.coordinate.longitude] forKey:@"curLocLong"];
     coordinate1 = newLocation.coordinate.longitude;
     coordinate2 = newLocation.coordinate.latitude;
-    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+   
     NSString * searchString = [defaults objectForKey:@"location"];
     NSScanner * scan = [NSScanner scannerWithString:searchString];
     [scan scanUpToString:@" " intoString:&searchString];
