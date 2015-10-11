@@ -8,6 +8,7 @@
 
 #import "ViewController1.h"
 #import <MapKit/MapKit.h>
+#define METERS_PER_MILE 1609.344
 
 @interface ViewController1 ()
 
@@ -32,9 +33,17 @@
     {
         if([current isEqualToString:[places objectAtIndex:i]])
         {
-            MKPointAnnotation * point = [[MKPointAnnotation alloc]init];
-            MKPinAnnotationView * annotation = [[MKPinAnnotationView alloc]init];
-
+            CLLocationCoordinate2D  mapCenter;
+            mapCenter.latitude = [[lats objectAtIndex:i]integerValue];
+            mapCenter.longitude = [[longs objectAtIndex:i]integerValue];
+            MKCoordinateRegion  viewRegion = MKCoordinateRegionMakeWithDistance(mapCenter, 0.5 * METERS_PER_MILE, 0.5 * METERS_PER_MILE);
+            [[self maps]setRegion:viewRegion animated: YES];
+            MKPointAnnotation *location = [[MKPointAnnotation alloc]init];
+            location.coordinate = mapCenter;
+            location.title = [places objectAtIndex:i];
+            location.subtitle = [strings objectAtIndex:i];
+            [[self maps]addAnnotation:location];
+            [[self maps]setDelegate:self];
             _label.text = [strings objectAtIndex:i];
             NSLog(@"%@ dfajflakjf",[strings objectAtIndex:i]);
         }

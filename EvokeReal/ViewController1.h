@@ -13,5 +13,5 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *label;
 @property (strong, nonatomic) IBOutlet UILabel *label1;
-@property (weak,nonatomic) IBOutlet MKMapView * maps;
+@property (strong,nonatomic) IBOutlet MKMapView * maps;
 @end
